@@ -106,5 +106,7 @@ En comparació amb els altres models vists al Kaggle obtenim una accuracy molt s
 
 ## Idees per treballar en un futur
 
-Seria interessant veure com millorar i optimitzar el temps al moment de classificar les imatges. Segurament ampliant el centre de la imatge que seria el cervell i retallant-la obtindriem alguna millora en el resultat.
+Seria interessant veure com millorar i optimitzar el temps al moment de classificar les imatges al mateix temps que millorar la seva precisió. Segurament ampliant el centre de la imatge que seria el cervell i retallant-la obtindriem alguna millora en el resultat.
+
+També seria interessant veure com funcionen altres models com ara *AlexNet* o *ResNet* en comparació amb l'utilitzat. De la mateixa manera que seria interessant mirar que passa amb un model entrenant-lo des de *scratch*.
 
