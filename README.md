@@ -94,7 +94,10 @@ Per finalitzar la pràctica hem reservat un apartat a analitzar amb un model pre
 | Random Forest |  98'93%          |1s |[Kaggle](https://www.kaggle.com/angieashraf/89-brain-tumor-detection-using-dl)|
 
 ## Demo
-Per veure com funcionen els nostres models podem fer-ho através del jupyter que trobarem al directori demo.
+Per veure com funcionen els nostres models podem fer-ho através del jupyter que trobarem al directori demo o bé utilitzant el fitxer *demo.py*. Tot i així pel seu ús correcte serà important tenir els models i variables necessaris que estan penjats al directori *models* i *variables and functions*. 
+
+## Extres
+Si volem executar alguna cel·la en particular ho podrem fer a partir de descarregar-nos la última sessió del jupyter que es troba en el subdirectori *final_version* del directori **notebooks**. El fitxer s'anomena *brain_tumor_session.db*.
 
 ## Conclusions
 El millor model creat ha estat el Random Forest desprès d'aplicar hiperparàmetres ja que a part de tenir la millor accuracy amb un 99'33% era el que millor classificava en general, i en especial els falsos negatius en els quals ens hem fixat per escollir.
