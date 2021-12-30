@@ -35,14 +35,25 @@ Per finalitzar la pràctica hem reservat un apartat a analitzar amb un model pre
 | MLP | Default |  98'6%          |2'54s |
 
 #### Amb Hiperparàmetres
-| Model  | Hieparàmetres |Mètrica|Temps (Cerca d'hiperparàmetres i Train)|
+| Model  | Hieparàmetres |Mètrica|Temps|
 | ------------- | ------------- |------------|-------------|
-| Regressió Logística | tol=0'1; solver='newton-cg'; penalty=none; dual=False; C=9.387816326530613 |  99'07%          |1'015s |
-| Decision Tree | min_samples_split=10; min_samples_leaf=2; max_features='sqrt'; max_depth=35; cirterion='gini'  |  98'27%          |1'55s |
-| Random Forest | n_estiamtors=612; min_samples_split=2; min_samples_leaf=2; max_features='log2'; max_depth=61; bootstrap=True|  99'33%          |1080'24s |
-| Ada Boost Classifier | n_estimators=1566; learning_rate=0.2330909090909091; algorithm='SAMME' |  99'07%          |1031'55s |
-| XGBoost Classifier | reg_lambda=0; reg_alpha=70; n_estimators=3093; max_depth=16; gamma=4; colsample_bytree=0'8 |  99'07%          |750'27s |
-| MLP | solver='sgd'; learning_rate='adaptative'; hidden_layer_sizes=(50, 50, 50); alpha=0'0001; activation='tanh' |  98'93%          |232'31s |
+| Regressió Logística | tol=0'1; solver='newton-cg'; penalty=none; dual=False; C=9.387816326530613 |  99'07%          |0'02s |
+| Decision Tree | min_samples_split=10; min_samples_leaf=2; max_features='sqrt'; max_depth=35; cirterion='gini'  |  98'27%          |0'005s |
+| Random Forest | n_estiamtors=612; min_samples_split=2; min_samples_leaf=2; max_features='log2'; max_depth=61; bootstrap=True|  99'33%          |1'99s |
+| Ada Boost Classifier | n_estimators=1566; learning_rate=0.2330909090909091; algorithm='SAMME' |  99'07%          |4'14s |
+| XGBoost Classifier | reg_lambda=0; reg_alpha=70; n_estimators=3093; max_depth=16; gamma=4; colsample_bytree=0'8 |  99'07%          |7'29s |
+| MLP | solver='sgd'; learning_rate='adaptative'; hidden_layer_sizes=(50, 50, 50); alpha=0'0001; activation='tanh' |  98'93%          |4'73s |
+
+#### Temps utilitzat cercant els hiperparàmetres amb RandomizedSearch
+| Model  |Temps|
+| ------------- |------------|
+| Regressió Logística |1'015s |
+| Decision Tree |1'55s |
+| Random Forest |1080'22s |
+| Ada Boost Classifier | 1031'55s |
+| XGBoost Classifier |750'27s |
+| MLP |232'31s |
+
 
 #### Models SVM sense Hiperparàmetres
 | Kernel  | Hieparàmetres |Mètrica|Temps|
@@ -54,13 +65,22 @@ Per finalitzar la pràctica hem reservat un apartat a analitzar amb un model pre
 | Sigmoid | Default |  21'46%          |0'42s |
 
 #### Models SVM amb Hiperparàmetres
-| Kernel  | Hieparàmetres |Mètrica|Temps (Cerca d'hiperparàmetres i Train)|
+| Kernel  | Hieparàmetres |Mètrica|Temps|
 | ------------- | ------------- |------------|-------------|
-| Linear | C=2.6633963963963967|  98'93%          |13'47s |
-| LinearSVC | penalty='l2'; max_iter=54711; loss='hinge'; dual=True; C=4.865378378378379 |  98'8%          |3'30s |
-| RBF | gamma='scale'; C=9.08918018018018 |  99'07%          |13'59s |
-| Polynomial | gamma='scale'; C=0.3913513513513514; degree=4; coef0=0.23232323232323235 |  98'9%          |1785'54s |
-| Sigmoid |  gamma='auto' ; C=9.329396396396396; coef0= 0.4040404040404041 |  98'8%          |78'54s |
+| Linear | C=2.6633963963963967|  98'93%          |0'05s |
+| LinearSVC | penalty='l2'; max_iter=54711; loss='hinge'; dual=True; C=4.865378378378379 |  98'8%          |0'005s|
+| RBF | gamma='scale'; C=9.08918018018018 |  99'07%          |0'11s |
+| Polynomial | gamma='scale'; C=0.3913513513513514; degree=4; coef0=0.23232323232323235 |  98'9%          |0'14s |
+| Sigmoid |  gamma='auto' ; C=9.329396396396396; coef0= 0.4040404040404041 |  98'8%          |0'09s |
+
+#### Temps utilitzat cercant els hiperparàmetres amb RandomizedSearch per SVM
+| Kernel  | Temps|
+| ------------- |-------------|
+| Linear |13'47s |
+| LinearSVC | 3'30s|
+| RBF | 13'59s |
+| Polynomial | 1785'54s |
+| Sigmoid |  78'58s |
 
 #### Pretrained model
 | Model  |Mètrica|Temps|
@@ -85,5 +105,3 @@ En comparació amb els altres models vists al Kaggle obtenim una accuracy molt s
 
 Seria interessant veure com millorar i optimitzar el temps al moment de classificar les imatges. Segurament ampliant el centre de la imatge que seria el cervell i retallant-la obtindriem alguna millora en el resultat.
 
-## Llicència
-El projecte s'ha desenvolupat sota llicència 
