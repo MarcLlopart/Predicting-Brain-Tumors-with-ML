@@ -35,7 +35,7 @@ Per finalitzar la pràctica hem reservat un apartat a analitzar amb un model pre
 | MLP | Default |  98'6%          |2'54s |
 
 #### Amb Hiperparàmetres
-| Model  | Hieparàmetres |Mètrica|Temps|
+| Model  | Hieparàmetres |Mètrica|Temps (Cerca d'hiperparàmetres i Train)|
 | ------------- | ------------- |------------|-------------|
 | Regressió Logística | tol=0'1; solver='newton-cg'; penalty=none; dual=False; C=9.387816326530613 |  99'07%          |1'015s |
 | Decision Tree | min_samples_split=10; min_samples_leaf=2; max_features='sqrt'; max_depth=35; cirterion='gini'  |  98'27%          |1'55s |
@@ -54,7 +54,7 @@ Per finalitzar la pràctica hem reservat un apartat a analitzar amb un model pre
 | Sigmoid | Default |  21'46%          |0'42s |
 
 #### Models SVM amb Hiperparàmetres
-| Kernel  | Hieparàmetres |Mètrica|Temps|
+| Kernel  | Hieparàmetres |Mètrica|Temps (Cerca d'hiperparàmetres i Train)|
 | ------------- | ------------- |------------|-------------|
 | Linear | C=2.6633963963963967|  98'93%          |13'47s |
 | LinearSVC | penalty='l2'; max_iter=54711; loss='hinge'; dual=True; C=4.865378378378379 |  98'8%          |3'30s |
